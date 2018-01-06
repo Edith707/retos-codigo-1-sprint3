@@ -11,33 +11,15 @@ h1{
   vertical-align: center;
 }
 .sunset{
-  
+  background-attachment: fixed;
   background-image: url(../assets/images/dawn.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  max-height: 50%;
+  background-size: cover;
+  margin: 0 auto;
   width: 100%;
 }
-.small{
-  display: block;
-  margin-left: 35%;
-  margin-top: 30%;
-  width: 40%;
-}
 
-.medium{
-  display: none;
-  margin-left: 35%;
-  margin-top: 30%;
-  width: 40%;
-}
 
-.large{
-  display: none;
-  margin-left: 35%;
-  margin-top: 30%;
-  width: 40%;
-}
 
 
 /*Ponienda las medias Queries*/
@@ -45,6 +27,7 @@ h1{
   body{background-color: blue;}
   .sunset{
   background-image: url(../assets/images/sunny-day.jpg);
+  min-height: 700px;
   }
   
 }
@@ -55,9 +38,11 @@ h1{
   body{background-color: pink;}
   .sunset{
   background-image: url(../assets/images/night.jpg);
+  min-height: 700px;
   }
-  .mobile3 {display: block;}
-}
+  }
+  
+
 
 
  
@@ -66,13 +51,17 @@ h1{
   body{background-color: yellow;}
    .sunset{
   background-image: url(../assets/images/night.jpg); 
+  min-height: 500px;
   }
-  .mobile3{display: block;}
- }
+  }
+  
+
 @media  (max-width: 764px) {
    body{background-color: green;}
    .sunset{
   background-image: url(../assets/images/dawn.png);
+  min-height: 400px;
+  }
 } 
-    .mobile1 {display: block;} 
+    
  }
