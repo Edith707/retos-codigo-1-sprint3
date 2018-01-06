@@ -1,0 +1,66 @@
+*{
+  margin:0;
+  border:0;
+  padding: 0;
+}
+
+h1{
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+}
+.sunset{
+  background-image: url(../assets/images/dawn.png);
+  background-size: cover;
+  display: none;
+  max-height: 700px;
+  width: 100%;
+}
+
+
+
+.small{
+  margin-left: 35%;
+  margin-top: 30%;
+  width: 40%;
+}
+
+
+/*Ponienda las medias Queries*/
+@media  (min-width: 1200px) {
+  .sunset{
+  background-image: url(../assets/images/sunny-day.jpg);
+  background-size: cover;
+  max-height: 700px;
+  width: 100%;
+  }
+ }
+
+
+@media (min-width: 980px) and (max-width: 1199px){
+  .mobile-1{
+  background-image: url(../assets/images/sunny-day.jpg);
+  background-size: cover;
+  max-height: 700px;
+  width: 100%;
+  }
+ }
+
+@media   (min-width: 768px) and (max-width: 979px) {
+  .mobile-2{
+  background-image: url(../assets/images/night.jpg);
+  background-size: cover;
+  max-height: 700px;
+  width: 100%;
+  } 
+ }
+
+@media and (max-width: 767px){
+  .mobile-3{
+  background-image: url(../assets/images/dawn.png);
+  background-size: cover;
+  max-height: 700px;
+  width: 100%;
+  }
+ }

@@ -1,0 +1,63 @@
+*{  border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Bellefair', serif;
+	font-size: 14pt;
+
+}
+/* Estilos de fuente
+    ont-family: 'Encode Sans Expanded', sans-serif; titulos
+
+    font-family: 'Bellefair', serif; texto 
+*/
+
+nav {
+	background-color: #343A40;
+	color: white;
+}
+nav>span {
+	font-size: 14pt;
+	font-weight: bolder;
+	margin-left: 2%;
+}
+nav>ul {
+	display: inline-block;
+}
+nav>ul>li{
+	color: #a4b2b5;
+	display: inline-block;
+    float: right;
+    list-style: none;
+    margin-left: 100px;
+}
+nav>ul>li:hover {
+	color: white;
+}
+section>div>h2{
+	font-family: 'Encode Sans Expanded',
+}
+
+
+
+
+section>div>button {
+	background-color: #007BFF;
+	border-radius: 15px;;
+	color: white;
+	font-size: 8pt;
+	padding: 10px;
+
+}
+
+section>div>button:hover {
+	background-color: #2EBCE9;
+}
+
+footer{
+	background-color: #343A40;
+	color: white;
+}
