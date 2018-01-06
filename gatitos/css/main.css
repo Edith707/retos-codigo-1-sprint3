@@ -11,16 +11,29 @@ h1{
   vertical-align: center;
 }
 .sunset{
+  
   background-image: url(../assets/images/dawn.png);
-  background-size: cover;
-  display: none;
-  max-height: 700px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-height: 50%;
   width: 100%;
 }
-
-
-
 .small{
+  display: block;
+  margin-left: 35%;
+  margin-top: 30%;
+  width: 40%;
+}
+
+.medium{
+  display: none;
+  margin-left: 35%;
+  margin-top: 30%;
+  width: 40%;
+}
+
+.large{
+  display: none;
   margin-left: 35%;
   margin-top: 30%;
   width: 40%;
@@ -29,38 +42,37 @@ h1{
 
 /*Ponienda las medias Queries*/
 @media  (min-width: 1200px) {
+  body{background-color: blue;}
   .sunset{
   background-image: url(../assets/images/sunny-day.jpg);
-  background-size: cover;
-  max-height: 700px;
-  width: 100%;
   }
- }
+  
+}
 
 
-@media (min-width: 980px) and (max-width: 1199px){
-  .mobile-1{
-  background-image: url(../assets/images/sunny-day.jpg);
-  background-size: cover;
-  max-height: 700px;
-  width: 100%;
-  }
- }
 
-@media   (min-width: 768px) and (max-width: 979px) {
-  .mobile-2{
+@media (min-width: 880px) and (max-width: 1199px){
+  body{background-color: pink;}
+  .sunset{
   background-image: url(../assets/images/night.jpg);
-  background-size: cover;
-  max-height: 700px;
-  width: 100%;
-  } 
- }
-
-@media and (max-width: 767px){
-  .mobile-3{
-  background-image: url(../assets/images/dawn.png);
-  background-size: cover;
-  max-height: 700px;
-  width: 100%;
   }
+  .mobile3 {display: block;}
+}
+
+
+ 
+
+@media   (min-width: 765px) and (max-width: 979px) {
+  body{background-color: yellow;}
+   .sunset{
+  background-image: url(../assets/images/night.jpg); 
+  }
+  .mobile3{display: block;}
+ }
+@media  (max-width: 764px) {
+   body{background-color: green;}
+   .sunset{
+  background-image: url(../assets/images/dawn.png);
+} 
+    .mobile1 {display: block;} 
  }
