@@ -8,13 +8,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Bellefair|Encode+Sans+Expanded" rel="stylesheet"> 
 	<!--Agregando viewport-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--Agregando links para el css, uno para el estilo y otro para el grid-->
+	<!--Agregando links para el css, uno para el estilo y otro para el grid e iconos-->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/style.css">
 </head>
 <body>
   <main class="conteiner">
-  	<nav>
+  	<nav class="row col-12">
   		<span>Start Bootstrap</span>
   		<ul>
   			<li>Home</li>
@@ -22,9 +23,11 @@
   			<li>Services</li>
   			<li>Contact</li>
   		</ul>
+      <span class="icon-menu"></span>
   	</nav>
-  	<header id="header" class="">
-  		
+  	<header id="header" class="row col-12" >
+  		<h1>Let's design together</h1>
+      <h3>Furniture on design</h3>
   	</header><!-- /header -->
   	<section class="">
   	  <h2>What We Do</h2>
@@ -40,26 +43,28 @@
   	  E: name@gmail.com
   	 </p>
   	</section>
-  	<section class="">
-  	  <div>
-
-  	  	<h2>Card title</h2>
+  	<section>
+  	  <div class="">
+        <img class="img" src="assets/images/living-and-dining-area.jpg" alt="dining-area">
+  	  	<h2>News</h2>
   	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
   	  	<button type="">Find Out More</button>
   	  </div>
   	  <div class="">
-        <h2>Card title</h2>
+        <img class="img" src="assets/images/decorating-ideas-for-a-small-bedroom-11.jpg" alt="room">
+        <h2>Interior Decoration</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
         <button type="">Find Out More</button>
   	  </div>
   	  <div class="">
-  	  	<h2>Card title</h2>
+        <img class="img" src="assets/images/bano-con-planta-en-maceta.jpg" alt="bathroom">
+  	  	<h2>Spaces</h2>
   	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
   	  	<button type="">Find Out More</button>
   	  </div>
   	</section>
   	<footer class="">
-  		<span>copy rigth</span>
+  		<p>Copyright <span class="icon-copyright"></span> your Website 2018</p>
   	</footer>
   </main>	
 </body>

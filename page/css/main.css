@@ -1,14 +1,9 @@
-*{  border: 0;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
 
 body{
-	font-family: 'Bellefair', serif;
+	font-family: sans-serif;
 	font-size: 14pt;
-
-}
+    color: black;
+} 
 /* Estilos de fuente
     ont-family: 'Encode Sans Expanded', sans-serif; titulos
 
@@ -37,14 +32,23 @@ nav>ul>li{
 nav>ul>li:hover {
 	color: white;
 }
+
+header {
+	background-image: url("../assets/images/interiores.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	clear: both;
+	height: 400px;
+	width: 100%;
+
+}
 section>div>h2{
 	font-family: 'Encode Sans Expanded',
 }
 
 
-
-
-section>div>button {
+section>button, section>div>button {
 	background-color: #007BFF;
 	border-radius: 15px;;
 	color: white;
@@ -53,11 +57,22 @@ section>div>button {
 
 }
 
-section>div>button:hover {
+section>button:hover, section>div>button:hover {
 	background-color: #2EBCE9;
 }
 
 footer{
 	background-color: #343A40;
 	color: white;
+}
+
+/*CLASES*/
+.img {
+	margin: auto;
+	height: 200px;
+	width: 300px;
+}
+
+.display {
+	display: inline-block;
 }
