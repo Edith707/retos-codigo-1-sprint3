@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+
+.container {
+  margin:0 auto;
+  width: 100%;
+  max-width: 100%
+}
+
+
+.row:before, .row:after {
+  clear: both;
+  content: "";
+  display: table;
+
+}
+
+
+[class*="col-"] {
+  float: left;
+  
+}
+/*Clases segune el porcentaje*/
+ .col-1{width: 8.33333%;}
+ .col-2{width: 16.666667%;}
+ .col-3{width: 25%;}
+ .col-4{width: 33.333333%;}
+ .col-5{width: 41.6666667%;}
+ .col-6{width: 50%;}
+ .col-7{width: 58.333333%;}
+ .col-8{width: 66.6666667%;}
+ .col-9{width: 75%;}
+ .col-10{width: 83.333333%;}
+ .col-11{width: 91.6666667%;}
+ .col-12{width: 100%;}
+
+/*Usando medias queris para pantallas con minimo 1025*/
+@media  (min-width: 1025px) {
+  
+  section{
+  background-image: url(../assets/images/sunny-day.jpg); 
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat; 
+  max-height: 968px;
+  }
+  #medium{display: inline-block;
+          height: 300px;
+          margin-top: 35%;
+          margin-left: 35%;
+          max-height: 320px;
+          width: 400px;}
+  #small{display: none;}
+  #large{display: none;}
+
+}
+
+/*Usando medias queris para pantallas con minimo 760px y maximo 1024px*/
+@media (min-width: 760px) and (max-width:1024px){
+  
+  section{
+  background-image: url(../assets/images/night.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat
+  height: 100%;
+  } 
+  #small{display: inline-block;
+         margin-left: 30%;
+         margin-top: 40%;}
+  #large{display: none;}
+  #medium{display: none;}
+  
+  }
+  
+/*Usando medias queris para pantallas con minimo 759px*/
+@media  (max-width: 759px) {
+   
+   section{
+  background-image: url(../assets/images/dawn.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 500px;
+  }
+  #small{display: none;}
+  #large{display: inline-block;
+         height: 250px;
+         max-width:250px;
+         min-height: 250px;
+         margin-left: 30%;
+         margin-top: 25%;
+         width: 175px;}
+  #medium{display: none;}
+ 
+} 
+
+    
